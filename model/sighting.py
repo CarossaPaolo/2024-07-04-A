@@ -18,7 +18,7 @@ class Sighting:
     longitude: float
 
     def __str__(self):
-        return f"id:{self.id} - {self.city}  [{self.state}], {self.datetime.strftime("%Y-%m-%d %H:%M:%S")}"
+        return f"id:{self.id} - {self.city} [{self.state.upper()}], {self.datetime.strftime('%Y-%m-%d alle %H:%M')}"
 
     def __hash__(self):
         return hash(self.id)
